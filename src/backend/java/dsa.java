@@ -1,9 +1,19 @@
+import java.util.Scanner;
 public class dsa{
     public static void main(String[] args) {
-        int arr[] = {12,13,15,17,1,6,2,5};
+        
+        Scanner sc = new Scanner(System.in);
 
-        for(int i = 0; i < arr.length; i++){
-            System.err.println(i);
+        int arr[] = new int[5];
+
+        for(int i = 0; i < arr.length ; i++){
+            System.out.println("Enter array elements: ");
+           arr[i] = sc.nextInt();
+        }
+
+
+        for(int j =0; j<arr.length; j++){
+            System.out.println("array elements are: "+arr[i]);
         }
     }
 }
