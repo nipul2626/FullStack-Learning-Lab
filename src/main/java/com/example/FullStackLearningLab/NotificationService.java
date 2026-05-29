@@ -1,13 +1,6 @@
 package com.example.FullStackLearningLab;
 
+public interface NotificationService {
 
-import ch.qos.logback.core.net.SyslogOutputStream;
-import org.springframework.stereotype.Component;
-
-@Component
-public class NotificationService {
-
-    void notificationservice(){
-        System.out.println("Notification Service Application");
-    }
+    void Service(String message);
 }

@@ -10,14 +10,6 @@ import org.springframework.context.annotation.Configuration;
 @SpringBootApplication
 public class FullStackLearningLabApplication implements CommandLineRunner {
 
-@Configuration
-public static class AppConfig{
-    @Bean
-    public Paymentservice obj(){
-        return new Paymentservice();
-    }
-}
-
 
 @Autowired
 Paymentservice obj1;
@@ -31,7 +23,7 @@ NotificationService obj2;
 @Override
     public void run(String... args){
         obj1.run();
-        obj2.notificationservice();
+        obj2.Service("Helo");
 }
 
 }
